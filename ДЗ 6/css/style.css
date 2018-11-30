@@ -61,7 +61,6 @@
 
 		.wrapper {width: 1200px;
 			margin: 0 auto;
-			background: pink;
 		}
 
 		.clearfix:after{
@@ -85,14 +84,17 @@
 		.gellery_item { overflow: hidden;
 			width: 500px;
 			height: 500px;
-
 		}
 
 		.my_img { 
 			width: 100%; 
 			text-align: center;
 			padding: 10px;
-
+		}
+		.overloy {
+			position: relative;
+			z-index: 1;
+			float: left;
 		}
 
 
