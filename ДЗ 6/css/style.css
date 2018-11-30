@@ -84,6 +84,7 @@
 		.gellery_item { overflow: hidden;
 			width: 500px;
 			height: 500px;
+			position: relative;
 		}
 
 		.my_img { 
@@ -95,6 +96,21 @@
 			position: relative;
 			z-index: 1;
 			float: left;
+		}
+
+		#insite {
+			height: 50px;
+			position: absolute;
+			left: 0;
+			bottom: 50%;
+			right: 0;
+			margin: 0 auto;
+			opacity: 0;
+			cursor: pointer;
+			text-align: center;
+		}
+
+		.pp {font-size: 100px;
 		}
 
 
