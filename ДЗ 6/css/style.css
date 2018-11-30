@@ -79,6 +79,22 @@
 			float: left;
 			margin: 30px;
 		}
+		.gellery {width: 1200px;
+			margin: 0 auto;
+		}
+		.gellery_item { overflow: hidden;
+			width: 500px;
+			height: 500px;
+
+		}
+
+		.my_img { 
+			width: 100%; 
+			text-align: center;
+			padding: 10px;
+
+		}
+
 
 		.my_class {text-align: justify; 
 			font-size: 20px;
