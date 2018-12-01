@@ -79,7 +79,7 @@
 			margin: 30px;
 		}
 		.gellery {width: 1200px;
-			margin: 0 auto;
+			margin: 0 auto; 
 		}
 		.gellery_item { overflow: hidden;
 			width: 500px;
@@ -91,6 +91,8 @@
 			width: 100%; 
 			text-align: center;
 			padding: 10px;
+			display: inline-block;
+
 		}
 		.overloy {
 			position: relative;
@@ -98,9 +100,8 @@
 			float: left;
 		}
 
-		#insite {
-			height: 50px;
-			position: absolute;
+		.insite {
+			height: 50%;
 			left: 0;
 			bottom: 50%;
 			right: 0;
@@ -108,9 +109,10 @@
 			opacity: 0;
 			cursor: pointer;
 			text-align: center;
+			display: inline-block;
 		}
 
-		.pp {font-size: 100px;
+		.pp {font-size: 50px;
 		}
 
 
@@ -132,8 +134,7 @@
 		}
 
 		.my_img {height: 230px; 
-			width: 300px; 
-			text-align: center;
+			width: 300px;
 			padding: 10px;
 		}
 
