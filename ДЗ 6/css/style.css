@@ -59,7 +59,8 @@
 			border-spacing: 0;
 		}
 
-		.wrapper {width: 1200px;
+		.wrapper {
+			width: 1200px;
 			margin: 0 auto;
 		}
 
@@ -70,7 +71,51 @@
 			height: 0;
 		}
 
-		.cng_3 {padding: 50px;
+		.gallery {
+			width: 1200px;
+			margin: 0 auto; 
+		}
+
+		.gallery_item {
+			width: 300px;
+			height: 300px;
+			position: relative;
+			margin: 20px 20px;
+			display: inline-block;
+		}
+
+		.my_img { 
+			width: 320px; 
+			display: inline-block;
+			height: 300px;
+		}
+
+		.insite {
+			position:absolute;
+			left:0;
+			bottom:0;
+			right:0;
+			top:50%;
+			opacity: 0;	
+			padding: 10px;
+			display:none;
+			height: 25px;
+			cursor: pointer;
+			text-align: center;
+			font-size: 20px;
+			color: white;
+			background: black;
+			width: 100%;
+		}
+
+		.gallery_item:hover .insite {
+			opacity: 1;
+			display: block;
+		}
+
+
+		.cng_3 {
+			padding: 50px;
 			font-size: 30px;
 		}
 
@@ -78,45 +123,14 @@
 			float: left;
 			margin: 30px;
 		}
-		.gellery {width: 1200px;
-			margin: 0 auto; 
-		}
-		.gellery_item { overflow: hidden;
-			width: 500px;
-			height: 500px;
-			position: relative;
-		}
 
-		.my_img { 
-			width: 100%; 
-			text-align: center;
-			padding: 10px;
-			display: inline-block;
-
-		}
 		.overloy {
 			position: relative;
 			z-index: 1;
 			float: left;
 		}
-
-		.insite {
-			height: 50%;
-			left: 0;
-			bottom: 50%;
-			right: 0;
-			margin: 0 auto;
-			opacity: 0;
-			cursor: pointer;
-			text-align: center;
-			display: inline-block;
-		}
-
-		.pp {font-size: 50px;
-		}
-
-
-		.my_class {text-align: justify; 
+		.my_class {
+			text-align: justify; 
 			font-size: 20px;
 			height: 200px; 
 			width: 1200px;
@@ -129,56 +143,58 @@
 			font-family: 'Philosopher', sans-serif;
 		} 
 
-		.second_class {text-align: left; 
+		.second_class {
+			text-align: left; 
 			font-family: 'Lobster', cursive;
 		}
 
-		.my_img {height: 230px; 
-			width: 300px;
-			padding: 10px;
-		}
-
-
-		h3 {text-align: left; 
+		h3 {
+			text-align: left; 
 			color: blue; 
 			font-size: 20px;
 		}
 
-		h1 {text-align: center; 
+		h1 {
+			text-align: center; 
 			color: green; 
 			font-style: oblique;
 			font-size: 40px; 
 			font-weight: 600;
 		}
 
-		h2 {text-align: left; 
+		h2 {
+			text-align: left; 
 			color: blue; 
 			font-style: oblique;
 			font-size: 20px; 
 			font-weight: 600;
 		}
 
-		.my_image {text-align: center;
+		.my_image {
+			text-align: center;
 			height: 400px; 
 			width: 500px; 
 			text-align: center;
 			padding: 10px;
 		}
 
-		.h2_class {text-align: center; 
+		.h2_class {
+			text-align: center; 
 			color: black; 
 			font-style: oblique;
 			font-size: 40px; 
 			font-weight: 600;
 		}
 
-		.h2_class1 {text-align: left; 
+		.h2_class1 {
+			text-align: left; 
 			color: black; 
 			font-style: oblique;
 			font-size: 40px; 
 			font-weight: 600;
 		}
 
-		.p_class {font-weight: 800; 
+		.p_class {
+			font-weight: 800; 
 			color: blue;
 		}
