@@ -64,13 +64,6 @@
 			margin: 0 auto;
 		}
 
-		.clearfix:after{
-			content:"";
-			clear: both;
-			display: block;
-			height: 0;
-		}
-
 		.gallery {
 			width: 1200px;
 			margin: 0 auto; 
@@ -80,24 +73,22 @@
 			width: 300px;
 			height: 300px;
 			position: relative;
-			margin: 20px 20px;
+			margin: 20px;
 			display: inline-block;
 		}
 
 		.my_img { 
-			width: 320px; 
+			width: 300px; 
 			display: inline-block;
-			height: 300px;
+			height: 260px;
 		}
 
 		.insite {
 			position:absolute;
-			left:0;
-			bottom:0;
-			right:0;
-			top:50%;
+			top:40%;
 			opacity: 0;	
-			padding: 10px;
+			padding-top: 10px;
+			padding-bottom: 10px;
 			display:none;
 			height: 25px;
 			cursor: pointer;
@@ -198,3 +189,190 @@
 			font-weight: 800; 
 			color: blue;
 		}
+
+		
+		#navbar ul{
+			display: none;
+			background-color: #33ADFF;
+			position: absolute;
+			top: 100%;
+		} 
+
+		/*#navbar ul li ul li{
+			display: none;
+			background-color: #33ADFF;
+			position: absolute;
+			top: 100%;
+		}*/
+
+
+		#navbar li:hover ul { display: block; }
+		#navbar li ul li:hover ul {display: block;}
+
+		#navbar, #navbar ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		#navbar {
+			height: 50px;
+			background-color: #33ADFF;
+			padding-top: 10px;
+			min-width: 470px;
+			margin: 0;
+			list-style-type: none;
+			border: 2px solid blue;
+			border-radius: 20px 5px;
+			text-align: center;
+		}
+
+		#navbar li {
+			display: inline-block;
+			position: relative;
+			padding: 10px;
+			z-index: 2;
+			border-radius: 20px 5px;
+		}
+
+		#navbar li a {
+			display: block;
+			font-size: 22px;
+			width: 100px;
+			color: white;
+			text-decoration: none;
+			text-align: center;
+		}
+
+		#navbar ul li { float: none; }
+		#navbar li:hover { background-color: #f90; }
+		#navbar ul li:hover { background-color: red;
+			padding: 10px 
+		}
+
+		#navbar li ul li ul {
+			position: absolute;
+			margin-left: 92%;
+			margin-top: -30%;
+			display: block;
+		}
+
+
+		.in_float_1 {
+			width: 400px;
+			height: 200px;
+			outline: 1px solid white;
+			background: green;
+			float: left;
+		}
+
+		.in_float_2 {
+			width: 800px;
+			height: 150px;
+			outline: 1px solid white;
+			background: green;
+			/*float: left;*/
+		}
+
+		.in_float_3 {
+			width: 400px;
+			min-height: 100px;
+			outline: 1px solid white;
+			background: red;
+			float: left;
+		}
+		.in_float_4 {
+			width: 800px;
+			min-height: 250px;
+			outline: 1px solid white;
+			background: green;
+			float: left;
+
+			
+		}
+		.in_float_5 {
+			width: 200px;
+			outline: 1px solid white;
+			min-height: 150px;
+			background: gold;
+			float: left;
+		}
+		.in_float_6 {
+			width: 400px;
+			outline: 1px solid white;
+			min-height: 100px;
+			background: gold;
+			float: left;
+		}
+		.in_float_7 {
+			width: 200px;
+			outline: 1px solid white;
+			min-height: 100px;
+			background: gold;
+			float: left;
+		}
+		.in_float_8 {
+			width: 200px;
+			outline: 1px solid white;
+			min-height: 50px;
+			background: gold;
+		}
+		.in_float_9 {
+			width: 800px;
+			height: 125px;
+			outline: 1px solid white;
+			background: green;
+			float: left;
+		}
+		.in_float_10 {
+			width: 400px;
+			height: 125px;
+			outline: 1px solid white;
+			background: green;
+			float: left;
+		}
+
+
+		.table_b {
+			background: lime;
+			text-align: center;
+		}
+
+		.clearfix:after {
+			content:"";
+			float: none;
+			clear: both;
+			display: block;
+		}
+		.row-1 {width: 400px;
+			float: left;
+		}
+		.row-2 div{ width: 800px;
+			float: left;
+		}
+		.row-3 {background: yellow; 
+		}
+		.cell-1 {
+			width: 800px;
+			float: left;
+		}
+		.cell-2 div{width: 300px; float: left;
+		}
+
+		.cell-3 {width: 400px;
+			outline: 1px solid white;
+			min-height: 250px;
+			background: red;
+			float: left;
+		}
+		.cell-4 {width: 400px;
+			outline: 1px solid white;
+			min-height: 150px;
+			background: greenyellow;
+			float: left;
+		}
+
+
+
+
+
