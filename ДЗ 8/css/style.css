@@ -129,7 +129,7 @@
 			padding: 10px; 
 			margin: 0 auto; 
 			height: auto;
-			text-align: center; 
+			text-align: center;
 			box-sizing: border-box;
 			font-family: 'Lobster', cursive;
 		} 
@@ -189,6 +189,10 @@
 			font-weight: 800; 
 			color: blue;
 		}
+		.p_class1 {
+			text-align: justify;
+		}
+
 
 		/*меню всплывания*/
 
@@ -447,7 +451,7 @@
 		
 		.vertical-text1 {
 			transform: rotate(90deg);
-			transform-origin: 118px 118px 0;
+			transform-origin: 17px 16px 0;
 			border:2px solid white;
 			border-radius: 10px;
 			position: absolute;
@@ -469,17 +473,20 @@
 			box-sizing: border-box;
 			height: 200px;
 			top: 300px;
-			left: -200px;
+			right: -200px;
 			width:240px;
 			transition:left .5s;
-			box-shadow: 10px 10px 15px #4da4f1;
+			/*box-shadow: 10px 10px 15px #4da4f1;*/
 		}
 		/*#sidebar-toggler:checked+#sidebar{
 			left:0;
 		}*/
 
 		#sidebar:hover{
-			left: 0;
+			right: -30px;
+			transition: all 1s ease;
+			box-shadow: -11px 10px 15px #4da4f1;
+
 		}
 
 		.icon{
@@ -523,7 +530,7 @@
 
 		.icon li a:before{
 			background-position: 0 0;
-			box-shadow: 0px 0px 38px 8px #4da4f1;
+			/*box-shadow: 0px 0px 38px 8px #4da4f1;*/
 			/*background:url('../img/icon1.png');*/
 			/*left: 10px;
 			/*transform: rotate(0deg);*/
@@ -544,7 +551,8 @@
 		/*hover*/
 
 		.icon li:hover a:before{
-			transform: rotate(360deg);			
+			transform: rotate(360deg);
+			box-shadow: 0px 0px 38px 8px #4da4f1;			
 		}
 
 		/*.icon li+li:hover a:before{
