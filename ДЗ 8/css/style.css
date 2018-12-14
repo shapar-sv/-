@@ -209,7 +209,7 @@
 			position: relative;
 			border: 2px solid blue;
 			border-radius: 20px 5px;
-			padding: 10px;
+			padding: 12px;
 			z-index: 2;
 			transition: all 2s ease-in-out;
 		}
@@ -221,6 +221,18 @@
 			color: white;
 			text-decoration: none;
 			text-align: center;
+			padding-left: 35px;
+		}
+		.menu>li>a:before {
+			content: "";
+			width: 45px;
+			height: 45px;
+			position: absolute;
+			top: 0;
+			left: 3px;
+			background:url('../img/icon77.png');
+			transition: all 1s ease;
+			border-radius: 21px 20px;
 		}
 
 		.menu ul {
@@ -269,6 +281,40 @@
 		.menu li:hover {
 			background: blue;
 		}
+
+		.menu li a:before{
+			background-position: -102px -50px;
+		}
+
+		.menu li+li a:before{
+			background-position: -302px -153px;
+		}
+
+		.menu li+li+li a:before{
+			background-position: -350px 0px;
+		}
+		.menu li+li+li+li a:before{
+			background-position: -50px -50px;
+		}
+
+		/*hover*/
+
+		.menu li:hover a:before{
+			background-position: -150px -50px;
+		}
+
+		.menu li+li:hover a:before{
+			background-position: -150px 0px;
+		}
+
+		.menu li+li+li:hover a:before{
+			background-position: -400px 0;
+		}
+		.menu li+li+li+li:hover a:before{
+			background-position: 0 -50px;
+		}
+
+
 
 		/*флоты*/
 		.in_float_1 {
@@ -451,7 +497,7 @@
 		
 		.vertical-text1 {
 			transform: rotate(90deg);
-			transform-origin: 17px 16px 0;
+			transform-origin: 17px 17px 0;
 			border:2px solid white;
 			border-radius: 10px;
 			position: absolute;
