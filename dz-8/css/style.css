@@ -1,0 +1,618 @@
+		@import url('https://fonts.googleapis.com/css?family=Philosopher&amp;subset=cyrillic" rel="stylesheet');
+		@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+		
+		@font-face {
+			font-family: 'lobster_1.3regular';
+			src: url('../fonts/lobster_2/lobster_1.3-webfont.eot');
+			src: url('../fonts/lobster_2/lobster_1.3-webfont.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/lobster_2/lobster_1.3-webfont.woff2') format('woff2'),
+			url('../fonts/lobster_2/lobster_1.3-webfont.woff') format('woff'),
+			url('../fonts/lobster_2/lobster_1.3-webfont.svg#lobster_1.3regular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+
+		}
+
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		.wrapper {
+			width: 1200px;
+			margin: 0 auto;
+		}
+
+		.gallery {
+			width: 1200px;
+			margin: 0 auto; 
+		}
+
+		.gallery_item {
+			width: 300px;
+			height: 300px;
+			position: relative;
+			margin: 20px;
+			display: inline-block;
+		}
+
+		.my_img { 
+			width: 300px; 
+			display: inline-block;
+			height: 260px;
+		}
+
+		.insite {
+			position:absolute;
+			top:40%;
+			opacity: 0;	
+			padding-top: 10px;
+			padding-bottom: 10px;
+			display:none;
+			height: 25px;
+			cursor: pointer;
+			text-align: center;
+			font-size: 20px;
+			color: white;
+			background: black;
+			width: 100%;
+		}
+
+		.gallery_item:hover .insite {
+			opacity: 1;
+			display: block;
+		}
+
+
+		.cng_3 {
+			padding: 50px;
+			font-size: 20px;
+		}
+
+		.cng_3 img {
+			float: left;
+			margin: 30px;
+		}
+
+		.overloy {
+			position: relative;
+			z-index: 1;
+			float: left;
+		}
+		.my_class {
+			text-align: justify; 
+			font-size: 20px;
+			height: 200px; 
+			width: 1200px;
+			overflow: auto; 
+			padding: 10px; 
+			margin: 0 auto; 
+			height: auto;
+			text-align: center;
+			box-sizing: border-box;
+			font-family: 'Lobster', cursive;
+		} 
+
+		.second_class {
+			text-align: left; 
+			font-family: 'Lobster', cursive;
+		}
+
+		h3 {
+			text-align: left; 
+			color: blue; 
+			font-size: 20px;
+		}
+
+		h1 {
+			text-align: center; 
+			color: green; 
+			font-style: oblique;
+			font-size: 40px; 
+			font-weight: 600;
+		}
+
+		h2 {
+			text-align: left; 
+			color: blue; 
+			font-style: oblique;
+			font-size: 20px; 
+			font-weight: 600;
+		}
+
+		.my_image {
+			text-align: center;
+			height: 400px; 
+			width: 500px; 
+			text-align: center;
+			padding: 10px;
+		}
+
+		.h2_class {
+			text-align: center; 
+			color: black; 
+			font-style: oblique;
+			font-size: 40px; 
+			font-weight: 600;
+		}
+
+		.h2_class1 {
+			text-align: left; 
+			color: black; 
+			font-style: oblique;
+			font-size: 40px; 
+			font-weight: 600;
+		}
+
+		.p_class {
+			font-weight: 800; 
+			color: blue;
+		}
+		.p_class1 {
+			text-align: justify;
+		}
+
+
+		/*меню всплывания*/
+
+		.menu {
+			background-color: #33ADFF;
+			border: 2px solid blue;
+			border-radius: 20px 5px;
+			text-align: center;
+			font-size: 22px;
+		}
+
+		.menu > li {
+			display: inline-block;
+			position: relative;
+			border: 2px solid blue;
+			border-radius: 20px 5px;
+			padding: 12px;
+			z-index: 2;
+			transition: all 2s ease-in-out;
+		}
+
+		.menu li a {
+			display: block;
+			font-size: 22px;
+			width: 100px;
+			color: white;
+			text-decoration: none;
+			text-align: center;
+			padding-left: 35px;
+		}
+		.menu>li>a:before {
+			content: "";
+			width: 45px;
+			height: 45px;
+			position: absolute;
+			top: 0;
+			left: 3px;
+			background:url('../img/icon77.png');
+			transition: all 1s ease;
+			border-radius: 21px 20px;
+		}
+
+		.menu ul {
+			display: none;
+		}
+
+		.menu ul {
+			width: 100%;
+			position: absolute;
+		}
+
+		.menu > li > ul {
+			left: 0;
+			top: 100%;
+		}
+
+		.menu > li > ul > li {
+			position: relative;
+			padding: 5px;
+			border: 2px solid blue;
+			border-radius: 20px 5px;
+			background-color: #ff9800;
+			transition: all 3s ease;
+		}
+
+		.menu li > ul > li > ul > li {
+			position: relative;
+			padding: 5px;
+			border: 2px solid blue;
+			border-radius: 20px 5px;
+			background-color: #ff9800;
+			transition: all 3s ease;
+		}
+
+		.menu > li > ul > li > ul {
+			left: 100%;
+			top: 0;
+			padding: 5px;
+		}
+
+		.menu li:hover > ul {
+			display: block;
+			background-color: #11ffee00;
+		}
+
+		.menu li:hover {
+			background: blue;
+		}
+
+		.menu li a:before{
+			background-position: -102px -50px;
+		}
+
+		.menu li+li a:before{
+			background-position: -302px -153px;
+		}
+
+		.menu li+li+li a:before{
+			background-position: -350px 0px;
+		}
+		.menu li+li+li+li a:before{
+			background-position: -50px -50px;
+		}
+
+		/*hover*/
+
+		.menu li:hover a:before{
+			background-position: -150px -50px;
+		}
+
+		.menu li+li:hover a:before{
+			background-position: -150px 0px;
+		}
+
+		.menu li+li+li:hover a:before{
+			background-position: -400px 0;
+		}
+		.menu li+li+li+li:hover a:before{
+			background-position: 0 -50px;
+		}
+
+
+
+		/*флоты*/
+		.in_float_1 {
+			width: 400px;
+			height: 200px;
+			outline: 1px solid white;
+			background: green;
+			float: left;
+		}
+
+		.in_float_2 {
+			width: 800px;
+			height: 150px;
+			outline: 1px solid white;
+			background: green;
+			
+		}
+
+		.in_float_3 {
+			width: 400px;
+			min-height: 100px;
+			outline: 1px solid white;
+			background: red;
+		}
+		.in_float_4 {
+			width: 800px;
+			min-height: 250px;
+			outline: 1px solid white;
+			background: green;
+			float: left;
+
+			
+		}
+		.in_float_5 {
+			width: 200px;
+			outline: 1px solid white;
+			min-height: 150px;
+			background: gold;
+			float: left;
+		}
+		.in_float_6 {
+			width: 400px;
+			outline: 1px solid white;
+			min-height: 100px;
+			background: gold;
+		}
+		.in_float_7 {
+			width: 200px;
+			outline: 1px solid white;
+			min-height: 100px;
+			background: gold;
+			float: left;
+		}
+		.in_float_8 {
+			width: 200px;
+			outline: 1px solid white;
+			min-height: 50px;
+			background: gold;
+		}
+		.in_float_9 {
+			width: 800px;
+			height: 125px;
+			outline: 1px solid white;
+			background: green;
+		}
+		.in_float_10 {
+			width: 400px;
+			height: 125px;
+			outline: 1px solid white;
+			background: green;
+			float: left;
+		}
+
+
+		.table_b {
+			background: lime;
+			text-align: center;
+		}
+
+		.clearfix:after {
+			content:"";
+			float: none;
+			clear: both;
+			display: block;
+		}
+		.row-1 {width: 400px;
+			float: left;
+		}
+		.row-2 div{ width: 800px;
+			float: left;
+		}
+		.row-3 {background: yellow; 
+		}
+		.cell-1 {
+			width: 800px;
+			float: left;
+		}
+		.cell-2 div{width: 300px; float: left;
+		}
+
+		.cell-3 {width: 400px;
+			outline: 1px solid white;
+			min-height: 250px;
+			background: red;
+			float: left;
+		}
+		.cell-4 {width: 400px;
+			outline: 1px solid white;
+			min-height: 150px;
+			background: greenyellow;
+		}
+
+
+		/*прикольное меню*/
+		.footer{
+			min-height: 100px;
+			background: #fff;
+			text-align: center;
+		}
+
+		.kismenu{
+			margin: 50px 0 0;
+		}
+
+		.kismenu li{
+			display: inline-block;
+			margin-left: 20px;
+		}
+
+		.kismenu li a{
+			color: #000;
+			padding-bottom: 10px;
+			position: relative;
+			padding: 15px 9px 65px 72px;
+			background: #00bcd4;
+		}
+
+		.kismenu li a:before{
+			content: "";
+			width: 70px;
+			height: 101px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: url('../img/kissm.png');
+			transition: all 1s ease;
+		}
+
+		.kismenu li a:before{
+			background-position: 0 -100px;
+		}
+
+		.kismenu li+li a:before{
+			background-position: -72px -102px;
+		}
+
+		.kismenu li+li+li a:before{
+			background-position: -142px -102px;
+		}
+
+		/*hover*/
+
+		.kismenu li:hover a:before{
+			background-position: 0 0;
+		}
+
+		.kismenu li+li:hover a:before{
+			background-position: -72px 0;
+		}
+
+		.kismenu li+li+li:hover a:before{
+			background-position: -143px 0;
+		}
+
+		/*выезжающее меню*/
+
+		#sidebar-toggler{
+			display: none;
+		}
+		
+		.vertical-text1 {
+			transform: rotate(90deg);
+			transform-origin: 17px 17px 0;
+			border:2px solid white;
+			border-radius: 10px;
+			position: absolute;
+			font-size: 30px;
+			font-family: 'Lobster', cursive;
+			color: white;
+			padding: 0 50px;
+		}
+
+
+		#sidebar {
+			border:2px solid #2196F3;
+			background:rgba(0,0,0,0.5);
+			border-radius:10px;
+			display: block;
+			position: fixed;
+			list-style: none;
+			margin: 0;
+			box-sizing: border-box;
+			height: 200px;
+			top: 300px;
+			right: -200px;
+			width:240px;
+			transition:left .5s;
+			/*box-shadow: 10px 10px 15px #4da4f1;*/
+		}
+		/*#sidebar-toggler:checked+#sidebar{
+			left:0;
+		}*/
+
+		#sidebar:hover{
+			right: -30px;
+			transition: all 1s ease;
+			box-shadow: -11px 10px 15px #4da4f1;
+
+		}
+
+		.icon{
+			margin: 35px 0 0;
+		}
+
+		.li_1 {
+			display: inline-block;
+			margin-left: 60px;
+			margin-right: 40px;
+			transform: rotate(45deg);
+		}
+		.li_2 {
+			display: inline-block;
+			margin-bottom: 56px;
+			transform: rotate(45deg)
+		}
+		.li_3 {
+			display: inline-block;
+			margin-left: 42px;
+			transform: rotate(45deg)
+		}
+
+		.icon li a{
+			color: #000;
+			padding-bottom: 10px;
+			position: relative;
+			background: #00bcd4;
+		}
+
+		.icon li a:before{
+			content: "";
+			width: 33px;
+			height: 33px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: all 1s ease;
+			background: url('../img/icon99.png');
+		}
+
+		.icon li a:before{
+			background-position: 0 0;
+			/*box-shadow: 0px 0px 38px 8px #4da4f1;*/
+			/*background:url('../img/icon1.png');*/
+			/*left: 10px;
+			/*transform: rotate(0deg);*/
+
+		}
+
+		.icon li+li a:before{
+			background-position: -36px -30px;
+			/*background:url('../img/icon2.png');*/
+		}
+
+		.icon li+li+li a:before{
+			background-position: -71px -30px;
+			/*background:url('../img/icon3.png');*/
+		}
+
+		
+		/*hover*/
+
+		.icon li:hover a:before{
+			transform: rotate(360deg);
+			box-shadow: 0px 0px 38px 8px #4da4f1;			
+		}
+
+		/*.icon li+li:hover a:before{
+			transform: rotate(360deg);
+		}
+
+		.icon li+li+li:hover a:before{
+			transform: rotate(360deg);
+		}*/
+
+
+
+
+
+
+
+
