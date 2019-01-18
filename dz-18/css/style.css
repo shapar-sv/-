@@ -1,5 +1,8 @@
 /*header*/
-  #header{
+  #header {
+    background: #222222;
+  }
+  #what{
     background: #35d06e;
   }
 
@@ -11,8 +14,27 @@
     background: #fff;
   }
 
-  .navbar{
+  /*.navbar{
     margin-bottom: 0;
+  }*/
+  .row {
+    background: transparent;
+    color: #81d742;
+  }
+  .logo {
+    background: #81d742;
+
+   }
+  #lang {
+    background:transparent;
+    color: white;
+    outline: none;
+  }
+  .menu {
+    float: right;
+  }
+  .menu li+li+li+li+li a {
+    padding-right: 0;
   }
 /*slider*/
 /*calculator*/
