@@ -25,7 +25,7 @@
 }
 .logo-2 {
   background: #1ccacd;
-   border-top-color: white;
+  border-top-color: white;
 }
 #lang {
   background:transparent;
@@ -39,12 +39,15 @@
   border-bottom: 1px dashed white;
 
 }
-.menu {
-  float: right;
+#minus {
+  background:transparent;
+  color: #999999;
+  outline: none;
+  border: none;
+  padding: 15px 6px 6px 6px;
 }
-.menu-1 {
-  float: left;
-}
+
+
 .menu li+li+li+li+li a {
   padding-right: 0;
 }
@@ -52,7 +55,7 @@
   text-align: center;
 }
 .text-1{
-  
+
   max-width: none;
 
 }
@@ -98,40 +101,107 @@ div.dom ul+ul a:hover {
   color: #81d742;
 }
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-    background-color: transparent;
-    /*border-color: #337ab7;*/
+  background-color: transparent;
+  /*border-color: #337ab7;*/
 }
 .nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none;
-    background-color: transparent;
+  text-decoration: none;
+  background-color: transparent;
 }
 .logo-2>li>a {    
-    color: black;    
-    
+  color: black;    
+}
+.line {
+  position: relative;
+  color: #222222;
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.line:before {
+  content: "";
+  position: absolute;
+  background: url(../images/figure_67.png); 
+  width: 50px;
+  height: 2px;    
+  left: 45%;
+  top: 120%;
+}
+.line-header {
+  position: relative;
+  color: #222222;
+  font-family: "Roboto Condensed";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 6.12px;
+  text-transform: uppercase;
+}
+
+.line-header:before {
+  content: "";
+  position: absolute;
+  background: url(../images/figure_67.png); 
+  width: 60px;
+  height: 2px;    
+  left: 48%;
+  bottom: -25px;
+}
+.line-work {
+  position: relative;
+  color: #222222;
+  font-family: "Roboto Condensed";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 6.12px;
+  text-transform: uppercase;
+}
+.line-work:before {
+  content: "";
+  position: absolute;
+  background: url(../images/figure_68.png); 
+  width: 60px;
+  height: 2px;    
+  left: 48%;
+  bottom: -35px;
+
+}
+
+
+.caption {
+  color: #999999;
+  font-family: "Roboto Condensed";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: none;
 }
 
 
 .color {
   background: rgba(15, 17, 18, 0.7);
-  
+
 }
 .article {
   color: #81d742;
 }
-div.caption img {
-  float: left;
-}
+
 .caption-content {
   text-align: left;
   border: none;
 }
 .veb {
-   background: url(../images/sloi_40.png) no-repeat center top / cover;
+ background: url(../images/sloi_40.png) no-repeat center top / cover;
 
 }
 .veb-content {
-background-color: #32b4e6;
-opacity: 0.85;
+  background-color: #32b4e6;
+  opacity: 0.85;
 }
 div.veb-content p {
   color: #ffffff;
