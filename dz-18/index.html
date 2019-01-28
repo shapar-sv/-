@@ -898,7 +898,7 @@
 					<div class="nav navbar-nav">
 						<ul class="nav navbar-nav">							
 							<li class="dropdown off">
-								<a href="#" class="dropdown-toggle text" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">+38 (099) 987-65-43<span class="caret"></span></a>
+								<a href="#" class="dropdown-toggle text" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">+38 (099) 987-65-43<span class="glyphicon glyphicon-arrow-down"></span></a>
 								<ul class="dropdown-menu logo-2">
 									<li><a href="#">+38 (099) 987-65-43</a></li>
 									<li><a href="#">+38 (097) 234-56-78</a></li>
@@ -911,7 +911,7 @@
 						</ul>
 						<ul class="nav navbar-nav">							
 							<li class="dropdown off-1">
-								<a href="#" class="dropdown-toggle dow text" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">fly-studio@info.com<span class="caret"></span></a>
+								<a href="#" class="dropdown-toggle dow text" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">fly-studio@info.com<span class="glyphicon glyphicon-arrow-down"></span></a>
 								<ul class="dropdown-menu logo">
 									<li><a href="#">studio@info.com</a></li>
 									<li><a href="#">fly-studio@info.com</a></li>
@@ -922,7 +922,22 @@
 							</li>					
 						</ul>
 					</div>
-				</div>					
+				</div>
+				<script type="text/javascript">
+					$(function(){
+						$(".dropdown").hover(            
+							function() {
+								$('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+								$(this).toggleClass('open');
+								$('span', this).toggleClass("glyphicon glyphicon-arrow-up glyphicon glyphicon-arrow-down");                
+							},
+							function() {
+								$('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+								$(this).toggleClass('open');
+								$('span', this).toggleClass("glyphicon glyphicon-arrow-up glyphicon glyphicon-arrow-down");                
+							});
+					});
+				</script>					
 			</div>				
 		</div>	
 		<div class="row">
