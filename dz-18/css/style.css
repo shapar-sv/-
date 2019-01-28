@@ -37,10 +37,12 @@
   outline: none;
   border: none;
   padding: 15px 6px 6px 6px;
+  border-bottom: 1px dashed transparent;
 }
 #lang:hover {
   color: white;
   border-bottom: 1px dashed white;
+  border-radius: inherit;
 
 }
 #minus {
@@ -254,7 +256,7 @@ div.caption h3 {
   font-family: "Roboto Condensed";
   font-size: 40px;
   font-weight: 700;
-  line-height: 6.12px;
+  
   text-transform: uppercase;
 }
 
@@ -264,8 +266,12 @@ div.caption h3 {
   background: url(../images/figure_67.png); 
   width: 60px;
   height: 2px;    
-  left: 48%;
-  bottom: -25px;
+  display: block;
+  top: 120%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 .line-work {
   position: relative;
@@ -273,7 +279,7 @@ div.caption h3 {
   font-family: "Roboto Condensed";
   font-size: 40px;
   font-weight: 700;
-  line-height: 6.12px;
+  
   text-transform: uppercase;
 }
 .line-work:before {
@@ -282,8 +288,12 @@ div.caption h3 {
   background: url(../images/figure_68.png); 
   width: 60px;
   height: 2px;    
-  left: 48%;
-  bottom: -35px;
+  display: block;
+  top: 120%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 
@@ -394,7 +404,7 @@ div.veb-content p {
   font-family: "Roboto Condensed";
   font-size: 40px;
   font-weight: 700;
-  line-height: 6.12px;
+  
   text-transform: uppercase;
 }
 
@@ -404,8 +414,12 @@ div.veb-content p {
   background: url(../images/figure_67.png); 
   width: 60px;
   height: 2px;    
-  left: 48%;
-  bottom: -25px;
+  display: block;
+  top: 120%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 .text-footer {
   color: #ffffff;
@@ -432,16 +446,16 @@ div.veb-content p {
 }
 .artcile3 {
   color: #999999;
-font-family: "Roboto Condensed";
-font-size: 16px;
-font-weight: 400;
-line-height: 6.12px;
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 6.12px;
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-    div.zero-1 /*> .navbar-collapse.collapse*/ {
-        display: none !important;
-    }
+  div.zero-1 /*> .navbar-collapse.collapse*/ {
+    display: none !important;
+  }
     /*div.zero-1 > .navbar-collapse.collapse.in {
         display: block !important;
     }
@@ -450,12 +464,32 @@ line-height: 6.12px;
     }
     div.zero-1 > .navbar-header {
         float:none;
-    }*/
-}
-.img-footer {
-  padding: 20px;
-}
+        }*/
+      }
+      .img-footer {
+        padding: 20px;
+      }
 
+
+      .advance {
+        position: relative;
+        color: #222222;
+        font-family: "Roboto Condensed";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        padding-left: 40px
+      }
+      .advance:before {
+        content: "";
+        position: absolute;
+        background: url(../images/done.png); 
+        width: 40px;
+        height: 40px;    
+        left: 0px;
+        bottom: 25%;
+      }
 
 
 
