@@ -202,13 +202,13 @@ div.caption h3 {
 .navigation_left:before {
   content: "";
   position: absolute;
-  background: url(../images/left2.png); 
+  background: url(../images/left.png); 
   z-index: 5;
   width: 26px;
   height: 54px;   
 }
 .navigation_left:hover:before {
-  background: url(../images/left.png);
+  background: url(../images/left2.png);
 }
 
 
@@ -221,13 +221,13 @@ div.caption h3 {
 .navigation_right:before {
   content: "";
   position: absolute;
-  background: url(../images/right.png); 
+  background: url(../images/right2.png); 
   z-index: 5;
   width: 26px;
   height: 54px;   
 }
 .navigation_right:hover:before {
-  background: url(../images/right2.png);
+  background: url(../images/right.png);
 }
 
 
@@ -331,7 +331,6 @@ div.caption p {
 .article {
   position: relative;
   color: #81d742;
-
   font-family: "Roboto Condensed";
   font-size: 16px;
   font-weight: 700;
@@ -452,6 +451,43 @@ div.veb-content p {
   line-height: 6.12px;
 }
 
+.navigation_left_2 { 
+  position: relative;
+  top: 40%;
+  left: -25%;
+  z-index: 5;
+}
+.navigation_left_2:before {
+  content: "";
+  position: absolute;
+  background: url(../images/left2.png); 
+  z-index: 5;
+  width: 26px;
+  height: 54px;   
+}
+.navigation_left_2:hover:before {
+  background: url(../images/left3.png);
+}
+
+
+.navigation_right_2 {  
+  position: relative; 
+  top: 40%;
+  left: 3%;
+}
+
+.navigation_right_2:before {
+  content: "";
+  position: absolute;
+  background: url(../images/right.png); 
+  z-index: 5;
+  width: 26px;
+  height: 54px;   
+}
+.navigation_right_2:hover:before {
+  background: url(../images/right3.png);
+}
+
 @media (min-width: 768px) and (max-width: 1200px) {
   div.zero-1 /*> .navbar-collapse.collapse*/ {
     display: none !important;
@@ -495,5 +531,47 @@ div.veb-content p {
 /*glyphicon glyphicon-arrow-up
 glyphicon glyphicon-arrow-down*/
 
+div.owl-dots {
+  display: none;
+}
+button.owl-prev span {
+  display: none;
+}
+button.owl-next span {
+  display: none;
+}
 
-
+.owl-prev { 
+  position: relative;
+  top: -140px;
+  left: -48%;
+  z-index: 5;
+}
+.owl-prev:before {
+  content: "";
+  position: absolute;
+  background: url(../images/left4.png); 
+  z-index: 5;
+  width: 26px;
+  height: 54px;   
+}
+.owl-prev:hover:before {
+  background: url(../images/left.png);
+}
+.owl-next { 
+  position: relative;
+  top: -140px;
+  left: 46%;
+  z-index: 5;
+}
+.owl-next:before {
+  content: "";
+  position: absolute;
+  background: url(../images/right4.png); 
+  z-index: 5;
+  width: 26px;
+  height: 54px;   
+}
+.owl-next:hover:before {
+  background: url(../images/right2.png);
+}
