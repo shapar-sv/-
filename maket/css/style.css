@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.Author {
+  color: #44c0c2;
+  font-family: 'Lobster', cursive;
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.nav-link {
+  color: #484c55;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  border-bottom: 1px solid transparent;
+}
+.nav-link{
+  margin-right: 1em !important;
+  padding: 1.5rem 1rem;
+}
+.nav-link:hover{
+  background: #f4f4f4;
+  color: #49cbcd;
+  border-bottom: 1px solid #49cbcd;
+}
+.navbar-collapse{
+  justify-content: flex-end;
+}
+.navbar-toggler{
+  background: #44c0c2 !important;
+}
+.title {
+  padding: 0;
+}
+
+.header {
+  background: url('../images/layer_4.png') center no-repeat; 
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+  min-height: 566px;
+  
+}
+.overlay{
+  position: absolute;  
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(68, 192, 194, 0.3);
+  color: white;
+}
+.description{
+  margin: auto;
+  max-width: 41rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 566px;
+}
+.description h1 {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.16);
+  font-family: "Open Sans";
+  font-size: 63px;
+  font-weight: 400; 
+}
+
+.description p {
+  font-family: "Open Sans";
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.description button {
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  font-family: "Open Sans";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.52px;
+  padding: 20px 40px;
+}
+.description button:hover {
+  background-color: #49cbcd;
+
+}
+
+.carousel-control-prev-icon {
+  background-image: url('../images/shape_2_left.png');
+  width: 51px;
+  height: 51px;
+}
+.carousel-control-next-icon {
+  background-image: url('../images/shape_2_right.png');
+   width: 51px;
+  height: 51px;
+
+}
+.card img {
+  text-align: center;
+  width: 99px;
+  margin: auto;
+}
+.card {
+  border: none;
+  width: 17rem;
+}
+
+.content {
+  justify-content: space-between;
+  padding: 60px 0;
+}
