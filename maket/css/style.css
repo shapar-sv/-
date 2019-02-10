@@ -1,12 +1,75 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-.Author {
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?f3k8gn');
+  src:  url('../fonts/icomoon.eot?f3k8gn#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?f3k8gn') format('truetype'),
+  url('../fonts/icomoon.woff?f3k8gn') format('woff'),
+  url('../fonts/icomoon.svg?f3k8gn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-computer-tablet:before {
+  content: "\e902";
+  color: #44c0c2;  
+  font-size: 2.6rem; 
+}
+.icon-light-bulb:before {
+  content: "\e903";
+  color: #44c0c2;  
+  font-size: 2.6rem;  
+}
+.icon-desktop-monitor:before {
+  content: "\e900";
+  color: #44c0c2;
+  font-size: 2.6rem;
+}
+.icon-small-rocket-ship-silhouette:before {
+  content: "\e901";
+  color: #44c0c2;
+  font-size: 2.6rem;  
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #49cbcd;
+    border-color: #49cbcd;
+}
+
+
+
+
+.author {
   color: #44c0c2;
   font-family: 'Lobster', cursive;
   font-size: 43px;
   font-weight: 400;
   line-height: 24px;
+}
+a.author:hover {
+  color: #44c0c2;
+  text-decoration: none;
+}
+.titlehead {
+  margin-left: 2rem;
 }
 
 .nav-link {
@@ -16,16 +79,17 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  border-bottom: 1px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 .nav-link{
-  margin-right: 1em !important;
+  margin-right: none;
   padding: 1.5rem 1rem;
 }
 .nav-link:hover{
   background: #f4f4f4;
   color: #49cbcd;
-  border-bottom: 1px solid #49cbcd;
+  border-bottom: 3px solid #49cbcd;
+  transition: all 0.3s linear;
 }
 .navbar-collapse{
   justify-content: flex-end;
@@ -43,7 +107,7 @@
   background-size: cover;
   background-position: center;
   position: relative; 
-  min-height: 566px;
+  min-height: 633px;
   
 }
 .overlay{
@@ -74,6 +138,7 @@
   font-family: "Open Sans";
   font-size: 23px;
   font-weight: 400;
+  margin-bottom: 3rem;
 }
 
 .description button {
@@ -87,20 +152,34 @@
   padding: 20px 40px;
 }
 .description button:hover {
-  background-color: #49cbcd;
+  background-color: transparent;
+  transition: all 0.3s linear;
+}
 
+
+a.carousel-control-prev {
+  transition: all 0.3s linear;
+}
+a.carousel-control-next {
+  transition: all 0.3s linear;
+}
+.carousel {
+  position: inherit;
 }
 
 .carousel-control-prev-icon {
   background-image: url('../images/shape_2_left.png');
   width: 51px;
   height: 51px;
+  /*position: absolute;
+  left: -4rem;*/
 }
 .carousel-control-next-icon {
   background-image: url('../images/shape_2_right.png');
   width: 51px;
   height: 51px;
-
+  /*position: absolute;
+  left: 11rem;*/
 }
 .card img {
   text-align: center;
@@ -109,7 +188,14 @@
 }
 .card {
   border: none;
-  width: 17rem;
+  /*width: 17rem*/;
+}
+.custom {
+  width: 99px;
+  height: 99px;
+  border: 3px solid #49cbcd;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
 .content {
