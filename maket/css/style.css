@@ -1,13 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?f3k8gn');
-  src:  url('../fonts/icomoon.eot?f3k8gn#iefix') format('embedded-opentype'),
-  url('../fonts/icomoon.ttf?f3k8gn') format('truetype'),
-  url('../fonts/icomoon.woff?f3k8gn') format('woff'),
-  url('../fonts/icomoon.svg?f3k8gn#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?anqccr');
+  src:  url('../fonts/icomoon.eot?anqccr#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?anqccr') format('truetype'),
+    url('../fonts/icomoon.woff?anqccr') format('woff'),
+    url('../fonts/icomoon.svg?anqccr#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,6 +26,61 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook .path1:before {
+  content: "\e905";
+  color: rgb(59, 89, 152);
+  
+}
+.icon-facebook .path2:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-google-plus .path1:before {
+  content: "\e907";
+  color: rgb(204, 55, 49);
+}
+.icon-google-plus .path2:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(188, 43, 42);
+}
+.icon-google-plus .path3:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(165, 39, 40);
+}
+.icon-google-plus .path4:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-google-plus .path5:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-twitter .path1:before {
+  content: "\e90c";
+  color: rgb(38, 166, 209);
+}
+.icon-twitter .path2:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-plus:before {
+  content: "\e904";
+  color: #f46d6d;  
+  font-size: 2.6rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35%;
 }
 
 .icon-computer-tablet:before {
@@ -45,13 +101,15 @@
 .icon-small-rocket-ship-silhouette:before {
   content: "\e901";
   color: #44c0c2;
-  font-size: 2.6rem;  
+  font-size: 2.6rem;
+  
 }
 
 .btn-primary:hover {
     color: #fff;
     background-color: #49cbcd;
     border-color: #49cbcd;
+    transition: all 0.3s linear;
 }
 
 
@@ -152,6 +210,7 @@ a.author:hover {
   padding: 20px 40px;
 }
 .description button:hover {
+  color: #49cbcd;
   background-color: transparent;
   transition: all 0.3s linear;
 }
@@ -167,14 +226,14 @@ a.carousel-control-next {
   position: inherit;
 }
 
-.carousel-control-prev-icon {
+.hero a span.carousel-control-prev-icon {
   background-image: url('../images/shape_2_left.png');
   width: 51px;
   height: 51px;
   /*position: absolute;
   left: -4rem;*/
 }
-.carousel-control-next-icon {
+.hero a span.carousel-control-next-icon {
   background-image: url('../images/shape_2_right.png');
   width: 51px;
   height: 51px;
@@ -212,10 +271,14 @@ a.carousel-control-next {
   font-weight: 400;
   
 }
-.portfolio img{
+/*.portfolio img{
   width: 100%;
   margin: 1em 0;
+}*/
+.folio {
+  margin: 1rem 0;
 }
+
 .port {
   margin: auto;
   max-width: 9rem;
@@ -228,6 +291,9 @@ a.carousel-control-next {
   border-radius: 5px;
   background-color: #49cbcd;
 }
+div.port button:hover {
+  transition: all 0.3s linear;
+} 
 
 .team {
   padding: 1em 0;
@@ -236,13 +302,107 @@ a.carousel-control-next {
   font-size: 42px;
   font-weight: 400;
 }
+.team-card {
+  width: 201px;
+  height: 201px;
+  background-color: #eeeef0;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.plus {
+  width: 42px;
+  height: 41px;
+  color: #f46d6d;
+  font-family: "Open Sans";
+  font-size: 85px;
+  font-weight: 400;
+  line-height: 24px;
+}
 .basic {
   background-color: #f1f1f1;
+  padding: 5rem 0;
 
 }
-.basic-content {
+/*.basic-content {
   justify-content: space-around;
-}
+}*/
 div.card-footer a {
-  padding: .4rem 2rem
+  padding: .4rem 2rem;
+  border-color:transparent;
+}
+div.card-footer a:hover {
+  border-color:transparent;
+}
+
+.blog {
+  background-color: #ffffff; 
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+  min-height: 469px;
+  
+}
+.blog h2 {
+  color: #4e525d;
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: 400;
+ 
+}
+.description-1{
+  margin: auto;
+  max-width: 41rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 469px;
+}
+.blog p {
+  color: #4e525d;
+  font-family: "Open Sans";
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.blog a span.carousel-control-prev-icon {
+  background-image: url('../images/shape_5_1.png');
+  width: 12px;
+  height: 23px;  
+}
+.blog a span.carousel-control-next-icon {
+  background-image: url('../images/shape_5_2.png');
+  width: 12px;
+  height: 23px;  
+}
+
+.contact {
+  background: url('../images/layer_28_1.png') center no-repeat; 
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+  min-height: 691px;
+  
+}
+.end{
+  position: absolute;  
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.28);
+  color: white;
+}
+.end-text {
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: 400;
+}
+.soc {
+  width: 99px;
+  height: 99px;
+  border: 3px solid #49cbcd;
+  border-radius: 50%;
+  margin: 0 auto;
 }
