@@ -217,6 +217,9 @@ a.author:hover {
   div.description-1 {
     max-width: 17rem;
   }
+  h3.end-text {    
+    margin: 1.4rem auto;
+  }
 }
 
 
