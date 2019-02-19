@@ -31,56 +31,68 @@
 .icon-facebook .path1:before {
   content: "\e905";
   color: rgb(59, 89, 152);
+  font-size: 2rem;
   
 }
 .icon-facebook .path2:before {
   content: "\e906";
   margin-left: -1em;
   color: rgb(255, 255, 255);
+  font-size: 2rem;
 }
 .icon-google-plus .path1:before {
   content: "\e907";
   color: rgb(204, 55, 49);
+  font-size: 2rem;
 }
 .icon-google-plus .path2:before {
   content: "\e908";
   margin-left: -1em;
   color: rgb(188, 43, 42);
+  font-size: 2rem;
 }
 .icon-google-plus .path3:before {
   content: "\e909";
   margin-left: -1em;
   color: rgb(165, 39, 40);
+  font-size: 2rem;
 }
 .icon-google-plus .path4:before {
   content: "\e90a";
   margin-left: -1em;
   color: rgb(255, 255, 255);
+  font-size: 2rem;
 }
 .icon-google-plus .path5:before {
   content: "\e90b";
   margin-left: -1em;
   color: rgb(255, 255, 255);
+  font-size: 2rem;
 }
 .icon-twitter .path1:before {
   content: "\e90c";
   color: rgb(38, 166, 209);
+  font-size: 2rem;
 }
 .icon-twitter .path2:before {
   content: "\e90d";
   margin-left: -1em;
   color: rgb(255, 255, 255);
+  font-size: 2rem;
 }
 
 .icon-plus:before {
   content: "\e904";
   color: #f46d6d;  
   font-size: 2.6rem;
-  display:flex;
+  position: absolute;
+  /*display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 35%;
+  padding-top: 35%;*/
+  left: 40%;
+  top: 40%;
 }
 
 .icon-computer-tablet:before {
@@ -106,10 +118,14 @@
 }
 
 .btn-primary:hover {
-    color: #fff;
-    background-color: #49cbcd;
-    border-color: #49cbcd;
+    color: #49cbcd;
+    background-color: transparent;
+    border: 1px solid #49cbcd;
     transition: all 0.3s linear;
+}
+.service a {
+  background-color: #49cbcd;
+  border: 1px solid #49cbcd;
 }
 
 
@@ -185,6 +201,25 @@ a.author:hover {
   justify-content: center;
   min-height: 566px;
 }
+@media (max-width: 576px) {
+  div.my-flex h1 {
+    font-size: 40px;    
+  }
+  div.my-flex h2 {
+    font-size: 30px;    
+  }
+  div.my-flex p {
+    font-size: .8rem;    
+  }
+  div.description {
+    max-width: 17rem;
+  }
+  div.description-1 {
+    max-width: 17rem;
+  }
+}
+
+
 .description h1 {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.16);
   font-family: "Open Sans";
@@ -210,9 +245,10 @@ a.author:hover {
   padding: 20px 40px;
 }
 .description button:hover {
-  color: #49cbcd;
-  background-color: transparent;
+  color: white;
+  background-color: #49cbcd;
   transition: all 0.3s linear;
+  border: 3px solid #49cbcd;
 }
 
 
@@ -289,9 +325,12 @@ a.carousel-control-next {
   font-size: 24px;
   font-weight: 400;
   border-radius: 5px;
-  background-color: #49cbcd;
+  
 }
 div.port button:hover {
+  color: #49cbcd;
+  background-color: transparent;
+  border: 1px solid #49cbcd;
   transition: all 0.3s linear;
 } 
 
@@ -308,6 +347,7 @@ div.port button:hover {
   background-color: #eeeef0;
   border-radius: 50%;
   margin: 0 auto;
+  position: relative;
 }
 .plus {
   width: 42px;
@@ -332,7 +372,19 @@ div.card-footer a {
 }
 div.card-footer a:hover {
   border-color:transparent;
+  background-color: transparent!important;
 }
+div.price-1 a:hover {
+  border-color: black;
+  color: black!important;
+  transition: all 0.3s linear;
+}
+div.price-2 a:hover {
+  border-color: #17a2b8;
+  color: #17a2b8!important;
+  transition: all 0.3s linear;
+}
+
 
 .blog {
   background-color: #ffffff; 
@@ -383,7 +435,7 @@ div.card-footer a:hover {
   background-position: center;
   position: relative; 
   min-height: 691px;
-  
+  background-size: auto 100%;
 }
 .end{
   position: absolute;  
@@ -398,6 +450,7 @@ div.card-footer a:hover {
   font-family: "Open Sans";
   font-size: 42px;
   font-weight: 400;
+  margin: 100px auto;
 }
 .soc {
   width: 99px;
@@ -405,4 +458,12 @@ div.card-footer a:hover {
   border: 3px solid #49cbcd;
   border-radius: 50%;
   margin: 0 auto;
+}
+div.form-row button {
+  padding: .4rem 2rem;
+}
+div.form-row button:hover {
+  background-color: transparent;
+  color: #17a2b8;
+  transition: all 0.3s linear;
 }
