@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>maket-2</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header-3">		
+			<div class="header-1">
+				<a href="#">8 (965) <span>266-0-266</span></a>					
+				<a href="#">8 (495) <span>665-32-62</span></a>	
+				<div class="online">				
+					<a href="#">Обратный звонок</a>
+				</div>
+			</div>			
+			<div class="header-2">
+				<h1>Nails<span>ProF</span></h1>
+				<p>Создан, чтобы быть лидером</p>
+			</div>
+			<div class="header-4">
+				<div class="online">
+					<a href="#">On-line запись</a>
+				</div>
+				<div class="social-1">
+					<a class="social" href="#"><span class="icon-facebook-logo"></span></a>
+					<a class="social" href="#"><span class="icon-twitter"></span></a>
+					<a class="social" href="#"><span class="icon-vkontakte-logo"></span></a>
+					<a class="social" href="#"><span class="icon-odnoklassniki-logo"></span></a>				
+				</div>
+			</div>
+		</div>
+		<nav> 
+			<div class="container">
+				<button class="ham nav">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</button>
+				<div class="nav-header menu">
+					<ul>
+						<li><a href="#"><span class="icon-home"></span></a></li>
+						<li class="parent_link">
+							<a href="#">О компании</a>
+							<ul class="child">
+								<li>
+									<a href="#">О нас</a>
+								</li>
+								<li>
+									<a href="#">Наша команда</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#">Обучение</a>
+						</li>
+						<li class="">
+							<a href="#">Расписание</a>
+						</li>
+						<li class="">
+							<a href="#">Статьи</a>
+						</li><li class="">
+							<a href="#">Галерея</a>
+						</li><li class="">
+							<a href="#">Моделям</a>
+						</li>
+						</li><li class="">
+							<a href="#">Контакты</a>
+						</li>
+						</li><li class="">
+						<a href="#">Интернет-магазин</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<script type="text/javascript">
+			$(document).ready(function () { 
+				var $win_n = $(window).width();
+				$('.ham').on('click', function () {
+					var $btn = $(this);
+					if(!$btn.hasClass('opened')){
+						$('.nav-header').addClass('active');
+						$('body').addClass('no_scroll');
+						$('.ham').removeClass('closed');
+						$('.ham').addClass('opened');
+					} else {
+						$('.nav-header').removeClass('active');
+						$('body').removeClass('no_scroll');
+						$('.ham').addClass('closed');
+						$('.ham').removeClass('opened');
+					}
+				});
+				if($win_n<=760){
+					$('.parent_link span').click(function () {
+						if($(this).parent().children('.child').css("display")=="none"){
+							$('.child').hide('normal');
+							$(this).parent().children('.child').show('normal');
+							$('.parent_link').removeClass('active');
+							$(this).parent().addClass('active');
+						} else {
+							$('.child').hide('normal');
+							$('.parent_link').removeClass('active');
+						}
+					})
+				} else {
+					$('.parent_link').mouseenter(function () {
+						$(this).children('.child').show('normal');
+						$(this).addClass('active');
+					});
+					$('.parent_link').mouseleave(function () {
+						$('.child').hide('normal');
+						$('.parent_link').removeClass('active');
+					});
+				}
+			})
+		</script>		
+		<!--nav>
+			<div class="wrapper">
+				<div class="menuToggle">Меню</div>
+				<ul class="menu clearfix">
+					<li><a href="#"><span class="icon-home"></span></a></li>		
+					<li><a href="#">О компании</a>
+						<ul class="downmenu">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Наша команда</a></li>
+							<li><a href="#">Новости</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Обучение</a></li>
+					<li><a href="#">Расписание</a></li>
+					<li><a href="#">Статьи</a></li>
+					<li><a href="#">Галерея</a></li>
+					<li><a href="#">Моделям</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Интернет-магазин</a></li>
+				</ul>
+			</div>
+		</nav>		
+		<script>
+			$(function(){
+
+				$('.menuToggle').on('click', function() {
+					$('.menu').slideToggle(300, function(){
+						if( $(this).css('display') === "none"){
+							$(this).removeAttr('style');
+						}
+					});
+				});
+			});
+		</script-->
+	</header>	
+	
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script-->
+</body>
+</html>
