@@ -7,109 +7,112 @@
 	<title>maket-2</title>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	
 </head>
 <body>
 	<header class="header">
-		<div class="header-3">		
-			<div class="header-1">
-				<a href="#">8 (965) <span>266-0-266</span></a>					
-				<a href="#">8 (495) <span>665-32-62</span></a>	
-				<div class="online">				
-					<a href="#">Обратный звонок</a>
+			<div class="banner">		
+				<div class="contacts">
+					<a href="#">8 (965)<span> 266-0-266</span></a>					
+					<a href="#">8 (495)<span> 665-32-62</span></a>	
+					<div class="online">				
+						<a href="#">Обратный звонок</a>
+					</div>
+				</div>			
+				<div class="logo">
+					<h1>Nails<span>ProF</span></h1>
+					<p>Создан, чтобы быть лидером</p>
 				</div>
-			</div>			
-			<div class="header-2">
-				<h1>Nails<span>ProF</span></h1>
-				<p>Создан, чтобы быть лидером</p>
-			</div>
-			<div class="header-4">
-				<div class="online">
-					<a href="#">On-line запись</a>
-				</div>
-				<div class="social-1">
-					<a class="social" href="#"><span class="icon-facebook-logo"></span></a>
-					<a class="social" href="#"><span class="icon-twitter"></span></a>
-					<a class="social" href="#"><span class="icon-vkontakte-logo"></span></a>
-					<a class="social" href="#"><span class="icon-odnoklassniki-logo"></span></a>				
-				</div>
-			</div>
-		</div>
-		<nav> 
-			<div class="container">
-				<button class="ham nav">
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
-				</button>
-				<div class="nav-header menu">
-					<ul>
-						<li><a href="#"><span class="icon-home"></span></a></li>
-						<li class="parent_link">
-							<a href="#">О компании</a>
-							<ul class="child">
-								<li>
-									<a href="#">О нас</a>
-								</li>
-								<li>
-									<a href="#">Наша команда</a>
-								</li>
-								<li>
-									<a href="#">Новости</a>
-								</li>
-							</ul>
-						</li>
-						<li class="">
-							<a href="#">Обучение</a>
-						</li>
-						<li class="">
-							<a href="#">Расписание</a>
-						</li>
-						<li class="">
-							<a href="#">Статьи</a>
-						</li><li class="">
-							<a href="#">Галерея</a>
-						</li><li class="">
-							<a href="#">Моделям</a>
-						</li>
-						</li><li class="">
-							<a href="#">Контакты</a>
-						</li>
-						</li><li class="">
-						<a href="#">Интернет-магазин</a>
-						</li>
-					</ul>
+				<div class="social">
+					<div class="online">
+						<a href="#">On-line запись</a>
+					</div>
+					<div class="socicon-1">
+						<a class="socicon" href="#"><span class="icon-facebook-logo"></span></a>
+						<a class="socicon" href="#"><span class="icon-twitter"></span></a>
+						<a class="socicon" href="#"><span class="icon-vkontakte-logo"></span></a>
+						<a class="socicon" href="#"><span class="icon-odnoklassniki-logo"></span></a>				
+					</div>
 				</div>
 			</div>
-		</nav>
-		<script type="text/javascript">
-			$(document).ready(function () { 
-				var $win_n = $(window).width();
-				$('.ham').on('click', function () {
-					var $btn = $(this);
-					if(!$btn.hasClass('opened')){
-						$('.nav-header').addClass('active');
-						$('body').addClass('no_scroll');
-						$('.ham').removeClass('closed');
-						$('.ham').addClass('opened');
-					} else {
-						$('.nav-header').removeClass('active');
-						$('body').removeClass('no_scroll');
-						$('.ham').addClass('closed');
-						$('.ham').removeClass('opened');
-					}
-				});
-				if($win_n<=760){
-					$('.parent_link span').click(function () {
-						if($(this).parent().children('.child').css("display")=="none"){
-							$('.child').hide('normal');
-							$(this).parent().children('.child').show('normal');
-							$('.parent_link').removeClass('active');
-							$(this).parent().addClass('active');
+			<nav> 
+				<div class="container">
+					<button class="ham nav">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</button>
+					<div class="nav-header menu">
+						<ul class="clearfix">
+							<li><a href="#"><span class="icon-home"></span></a></li>
+							<li class="parent_link">
+								<a href="#">О компании</a>
+								<ul class="child">
+									<li>
+										<a href="#">О нас</a>
+									</li>
+									<li>
+										<a href="#">Наша команда</a>
+									</li>
+									<li>
+										<a href="#">Новости</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="#">Обучение</a>
+							</li>
+							<li class="">
+								<a href="#">Расписание</a>
+							</li>
+							<li class="">
+								<a href="#">Статьи</a>
+							</li><li class="">
+								<a href="#">Галерея</a>
+							</li><li class="">
+								<a href="#">Моделям</a>
+							</li>
+							</li><li class="">
+								<a href="#">Контакты</a>
+							</li>
+							</li><li class="">
+								<a href="#">Интернет-магазин</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<script type="text/javascript">
+				$(document).ready(function () { 
+					var $win_n = $(window).width();
+					$('.ham').on('click', function () {
+						var $btn = $(this);
+						if(!$btn.hasClass('opened')){
+							$('.nav-header').addClass('active');
+							$('body').addClass('no_scroll');
+							$('.ham').removeClass('closed');
+							$('.ham').addClass('opened');
 						} else {
-							$('.child').hide('normal');
-							$('.parent_link').removeClass('active');
+							$('.nav-header').removeClass('active');
+							$('body').removeClass('no_scroll');
+							$('.ham').addClass('closed');
+							$('.ham').removeClass('opened');
 						}
-					})
+					});
+					if($win_n<=760){
+						$('.parent_link span').click(function () {
+							if($(this).parent().children('.child').css("display")=="none"){
+								$('.child').hide('normal');
+								$(this).parent().children('.child').show('normal');
+								$('.parent_link').removeClass('active');
+								$(this).parent().addClass('active');
+							} else {
+								$('.child').hide('normal');
+								$('.parent_link').removeClass('active');
+							}
+						})
 				} else {
 					$('.parent_link').mouseenter(function () {
 						$(this).children('.child').show('normal');
@@ -122,42 +125,178 @@
 				}
 			})
 		</script>		
-		<!--nav>
-			<div class="wrapper">
-				<div class="menuToggle">Меню</div>
-				<ul class="menu clearfix">
-					<li><a href="#"><span class="icon-home"></span></a></li>		
-					<li><a href="#">О компании</a>
-						<ul class="downmenu">
-							<li><a href="#">О нас</a></li>
-							<li><a href="#">Наша команда</a></li>
-							<li><a href="#">Новости</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Обучение</a></li>
-					<li><a href="#">Расписание</a></li>
-					<li><a href="#">Статьи</a></li>
-					<li><a href="#">Галерея</a></li>
-					<li><a href="#">Моделям</a></li>
-					<li><a href="#">Контакты</a></li>
-					<li><a href="#">Интернет-магазин</a></li>
-				</ul>
+	</header>
+	<section class="zero">
+		<div class="mainstock">
+			<div class="single-slide">
+				<div class="face">					
+						<div class="stock">
+							<h2>НОВЫЕ КУРСЫ</h2>
+							<p>ПО НАРАЩИВАНИЮ НОГТЕЙ</p>
+							<p>Только в этом месяце скидка 7%</p>					
+							<a href="#">Записаться</a>	
+						</div>
+						<div class="none">
+							<img src="images/face.png">
+						</div>
+						<div class="none-1">
+							<img src="images/face-8.png">
+						</div>									
+				</div>
+				<div class="face">
+					<div class="stock">
+						<h2>НОВЫЕ КУРСЫ</h2>
+						<p>ПО НАРАЩИВАНИЮ НОГТЕЙ</p>
+						<p>Только в этом месяце скидка 7%</p>
+						<a href="#">Записаться</a>						
+					</div>
+					<div class="none-2">
+						<img src="images/face.png">
+					</div>
+					<div class="none-2-1">
+						<img src="images/face-8.png">
+					</div>
+				</div>
+				<div class="face"><img src="images/face.png"></div>
 			</div>
-		</nav>		
-		<script>
-			$(function(){
+		</div>	
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
 
-				$('.menuToggle').on('click', function() {
-					$('.menu').slideToggle(300, function(){
-						if( $(this).css('display') === "none"){
-							$(this).removeAttr('style');
-						}
-					});
+		<script>			
+				$('.single-slide').slick({
+
+				});			
+		</script>
+
+		<!--script type="text/javascript">
+			$(document).ready(function(){
+				$('.single-item').slick({
+					
 				});
 			});
 		</script-->
-	</header>	
-	
-	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script-->
+	</section>
+	<section>
+		<div class="banner-1">
+			<div class="course">
+				<div class="base">
+					<div class="basein">
+						Базовые курсы маникюра, педикюра и наращивания ногтей
+					</div>
+				</div>				
+			</div>
+			<div class="course-1">
+				<div class="base-1">
+					<div class="basein-1">
+						Курсы дизайна
+					</div>
+				</div>
+			</div>
+			<div class="course-2">
+				<div class="base-2">
+					<div class="basein-2">
+						Повышение квалификации по наращиванию ногтей
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>
+	<section>
+		<div class="about">
+			<h2>О нас</h2>
+			<p>Пройдя путь поиска и усовершенствования мировых стандартов в технике и обучении Тренг достиг совершенно нового уровня. Посвятив много времени и усилий в развитии новых технологий в ногтевом бизнесе, он сделал очень успешный шаг в развитии собственной линии высококлассной продукции. Odyssey Nail Systems - бренд, также известный как ONS. Также компанию занимается обучением наращиванию ногтей молодых специалистов.
+			</p>
+			<p>Продукция ONS имеет огромный успех в Азии, Европе, США, Японии, Корее и привлекла внимание профессионалов в области нейл - индустрии России. </p>
+			<p>Продукция ONS продолжает завоевывать популярность и люди по всему Миру начинают узнавать и любить этот материал который создан и доведен Тренгом Нгуеном до совершенства в области техники и удобства в обучении. Неудивительно, что выпускники школы наращиванию ногтей ONS подтверждают свой статус победителей на международных чемпионатах по нейл-дизайну.</p>
+		</div>
+	</section>
+	<section>
+		<div class="about">
+			<h2>Новости</h2>
+		</div>
+		<div class="banner-1">
+			<div class="news">
+				<h3>Новинки! Гель-лаки с эффектом хрома</h3>
+				<a href="#"><span class="icon-calendar_icon">  26.11.14</span></a>
+				<p>Поступили в продажу новые гель-лаки "Metallic gel polish" с эффектом хрома. Все новинки выставлены в интернет-магазине.</p>
+				<a href="#">Подробне...</a>
+			</div>
+			<div class="news">
+				<h3>Новые пластиковые формы в продаже</h3>
+				<a href="#"><span class="icon-calendar_icon">  19.11.14</span></a>
+				<p>В продажу поступили новые пластиковые формы для наращивания ногтей любым материалом. Прекрасно держат форму.</p>
+				<a href="#">Подробне...</a>
+			</div>
+			<div class="news">
+				<h3>Маникюр и педикюр в ноябре 2014</h3>
+				<a href="#"><span class="icon-calendar_icon">  07.11.14</span></a>
+				<p>Курс маникюра состоится 16, 17, 18, 23, 25 ноября 2014 года. Мастер-класс от профссионалов с многолетним опытом.</p>
+				<a href="#">Подробне...</a>
+			</div>			
+		</div>	
+	</section>
+	<footer class="footer">
+			<nav> 
+				<div class="container">					
+					<div class="nav-info">
+						<ul class="clearfix">
+							<li class="parent_link">
+								<a href="#">Главная</a>
+							</li>
+							<li class="parent_link">
+								<a href="#">О компании</a>
+							</li>
+							<li class="parent_link">
+								<a href="#">Обучение</a>
+							</li>
+							<li class="parent_link">
+								<a href="#">Полезная информация</a>
+							</li>
+							<li class="parent_link">
+								<a href="#">Фото</a>
+							</li>
+							<li class="parent_link">
+								<a href="#">Контакты</a>
+							</li>							
+						</ul>
+					</div>
+				</div>
+			</nav>		
+			<div class="banner">		
+				<div class="contacts">
+					<a href="#">8 (965)<span> 266-0-266</span></a>					
+					<a href="#">8 (495)<span> 665-32-62</span></a>	
+					<div class="online">				
+						<a href="#">Обратный звонок</a>
+					</div>
+				</div>			
+				<div class="logo">
+					<h1>Nails<span>ProF</span></h1>
+					<p>Создан, чтобы быть лидером</p>
+				</div>
+				<div class="social">
+					<div class="online">
+						<a href="#">On-line запись</a>
+					</div>
+					<div class="socicon-1">
+						<a class="socicon" href="#"><span class="icon-facebook-logo"></span></a>
+						<a class="socicon" href="#"><span class="icon-twitter"></span></a>
+						<a class="socicon" href="#"><span class="icon-vkontakte-logo"></span></a>
+						<a class="socicon" href="#"><span class="icon-odnoklassniki-logo"></span></a>				
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="copyright">
+					<p>NailsProf © 2014</p>
+					<a href="#">
+						<img src="images/arrow.png">
+					</a>
+					<a href="#">Создание сайта<span> Webstroy</span></a>				
+				</div>
+			</div>				
+	</footer>	
 </body>
 </html>
