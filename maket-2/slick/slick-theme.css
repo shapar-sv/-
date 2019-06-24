@@ -21,6 +21,7 @@
 {
     font-size: 0;
     line-height: 0;
+    z-index: 22;
 
     position: absolute;
     top: 50%;
@@ -79,7 +80,7 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 0;
 }
 [dir='rtl'] .slick-prev
 {
@@ -97,7 +98,7 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 0;
 }
 [dir='rtl'] .slick-next
 {
