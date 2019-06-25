@@ -163,6 +163,7 @@ table {
 }
 .contacts a {
   text-decoration: none;
+  text-align: center;
 }
 .contacts span {
   color:#ffffff;
@@ -439,6 +440,9 @@ nav {
     .nav-header span {position: absolute; font-size: 13px; right: 0; top: 15px; cursor: pointer; color: red}
   }
 
+
+
+
   @media (max-width: 760px) {
     .banner {   
       flex-direction: column;
@@ -471,7 +475,7 @@ nav {
   }
 
   .none img {
-    min-width: 100%;
+    width: 100%;
     /*position: absolute;
     top: 0;
     left: 0;
@@ -503,8 +507,8 @@ nav {
   }*/
   .stock {
     position: absolute;
-    top: 160px;
-    right: 80px;    
+    top: 15%;
+    right: 5%;    
     height: 167px;    
     flex-direction: column;
     display: flex;
@@ -558,16 +562,21 @@ nav {
     max-width: 1024px;
     margin: 0 auto;
     padding: 50px 0;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .course {
-    width: 320px;
-    height: 149px;
-    background: url('../images/course-1.png');
+    /*width: 320px;
+    height: 149px;*/
+    display: flex;
+    height: 100%;
+    width: 30%;
+    background: url('../images/course-1.png') center no-repeat;
+    background-size: cover;
   }
   .base {
     min-height: 100%;  
+    width: 100%;
     background: rgba(152, 17, 53, 0.6); 
     color: white;
     font-family: "Open Sans";
@@ -586,13 +595,18 @@ nav {
    transition: all 0.3s linear;
  }
  .course-1 {
-  width: 320px;
-  height: 149px;
-  background: url('../images/course-2.png');
-  position: relative;
+  /*width: 320px;
+  height: 149px;*/
+  display: flex;
+  height: 100%;
+  width: 30%;
+  background: url('../images/course-2.png') center no-repeat;
+  background-size: cover;
+  
 }
 .base-1 {
   min-height: 100%;  
+  width: 100%;
   background: rgba(176, 74, 101, 0.6);
   color: white;
   font-family: "Open Sans";
@@ -612,13 +626,18 @@ nav {
  transition: all 0.3s linear;
 }
 .course-2 {
-  width: 320px;
-  height: 149px;
-  background: url('../images/course-3.png');
-  position: relative;
+  /*width: 320px;
+  height: 149px;*/
+  display: flex;
+  height: 100%;
+  width: 30%;
+  background: url('../images/course-3.png') center no-repeat;
+  background-size: cover;
+  
 }
 .base-2 {
   min-height: 100%;  
+  width: 100%;
   background: rgba(234, 53, 102, 0.6);
   color: white;
   font-family: "Open Sans";
@@ -642,6 +661,10 @@ nav {
   margin: 0 auto;
   text-align: center;
 }
+.aboutus {
+  width: 90%;
+  margin: 0 auto;
+}
 
 .about h2 {
   color: #31353d;
@@ -664,8 +687,9 @@ nav {
 .news {
   display: flex;  
   flex-direction: column;
-  width: 320px;
-  height: 149px;
+  width: 90%;
+  height: 100%;
+  padding: 1%;
 }
 .news h3 {
   color: #ea3565;
@@ -705,13 +729,19 @@ nav {
     align-items: center;
     padding: 0 0;
   }
+  .course {
+    width: 95%;
+  }
+  .course-1 {
+    width: 95%;
+  }
+  .course-2 {
+    width: 95%;
+  }
   .nav-info {
     display: none;
   }
-  .stock {
-    right: 0;
-  }
-  
+    
 }
 
 .footer {
