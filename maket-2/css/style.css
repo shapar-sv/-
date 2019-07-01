@@ -447,6 +447,33 @@ nav {
 
 
 
+
+  @media (max-width: 1024px) {
+    .banner {
+      /*flex-direction: column;*/ 
+      align-items: center;
+      padding: 0 0;
+    }
+    .contacts {      
+      width: 22%;
+    }
+
+    .social {
+      width: 22%;
+    }
+    .socicon-1 {
+      margin: 0 auto;
+      width: 100%;
+    }
+    .logo {
+      width: 70%;
+    }
+    .logo h1 {
+      line-height: normal;
+      font-size: 40px;
+    }
+  }
+
   @media (max-width: 768px) {
     .banner {
       flex-direction: column;  
