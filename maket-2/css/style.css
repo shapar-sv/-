@@ -532,6 +532,12 @@ nav {
     .face {
       position: relative;
     }
+    .none {
+      background-image: url('../images/face-1.png');
+      background-size: cover;
+      width: 100%;
+      height: 472px;
+    }
 
     .none img {
       width: 100%;
