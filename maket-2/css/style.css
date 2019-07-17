@@ -425,7 +425,7 @@ nav {
     width: 100%;
     left: -100%;
     margin-top: 0;
-    z-index: 2;
+    z-index: 23;
     height: 100%;
     background: #2c323e;
     overflow-y: scroll;
@@ -740,10 +740,13 @@ nav {
 @media (max-width: 425px) {
   .stock {
     right: 12%;
-    height: auto;
+    /*height: auto;*/
   }
   .stock h2 {
     font-size: 30px;
+  }
+  .none {
+    height: 220px;
   }
   
 
